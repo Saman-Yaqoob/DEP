@@ -1,0 +1,36 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #609EA2;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #E5FDD1;
+    font-size: 18px;
+    padding: 0 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    color: #B8E8FC;
+    font-size: 40px;
+    background-color: #2192FF;
+    height: 3rem;
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    font-family: 'Shantell Sans', cursive;
+}

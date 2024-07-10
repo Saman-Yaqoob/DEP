@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <section id="form">
+      <div style="background-color: #dbdbdb; margin: 4rem; border-radius: 50px; color: white;">
+        <div style="padding: 20px; font-size: 50px; text-align: center; ">
+          <b style="color: #000000;">Contact Us</b>
+        </div>
+        <form method="post" style="margin-left: 33%; font-size: 23px;">
+            <label for="yname" style="color: #000000;">Enter your name:</label>
+            <input type="text" name="name" id="yname" required style="width: 15rem; height: 1.5rem; border-radius: 10px; border-color: white;"><br><br>
+            <label for="email" style="color: #000000;">Enter your email:</label>
+            <input type="email" id="email" name="email" required style="width: 15rem; height: 1.5rem; border-color: white; border-radius: 10px;"><br><br>
+            <label for="quantity" style="color: #000000;">Contact No.:</label>
+            <input type="text" id="quantity" name="quantity" pattern="\d{11}" required style="width: 15rem; height: 1.5rem; margin-left: 52px; border-color: white; border-radius: 10px;" title="Please enter exactly 11 digits."><br><br>
+            <label for="msg" style="color: #000000; margin-left: 18%;">Message:</label><br>
+            <textarea id="mag" name="msg" rows="10" cols="30" required style="width: 54%; margin-top: 15px; border-color: white; border-radius: 10px;"></textarea><br><br>
+            <input type="submit" name="submit" value="Submit" style="width: 20%; height: 42px; margin-right: 104px; border-radius: 20px; font-size: 18px; color: red;">
+            <input type="reset" value="Reset" style="width: 20%; height: 42px; border-radius: 20px; font-size: 18px; color: red;">
+            <br><br>
+        </form>
+        
+        <?php
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            echo "<p style='text-align:center; color:green; font-size:24px;'>Form submitted</p>";
+        }
+        ?>
+        
+      </div>
+    </section>
+
+   
+  </body>
+</html>
