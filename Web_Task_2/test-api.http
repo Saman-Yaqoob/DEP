@@ -1,0 +1,28 @@
+### Create a new blog post
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+  "title": "Sample Post",
+  "content": "This is a sample post content.",
+  "author": "John Doe"
+}
+
+### Get all blog posts
+GET http://localhost:3000/api/posts
+
+### Get a single blog post by ID
+GET http://localhost:3000/api/posts/{postId}  # Replace {postId} with an actual ID after creation
+
+### Update a blog post by ID
+PUT http://localhost:3000/api/posts/{postId}  # Replace {postId} with an actual ID
+Content-Type: application/json
+
+{
+  "title": "Updated Post Title",
+  "content": "Updated content.",
+  "author": "Jane Doe"
+}
+
+### Delete a blog post by ID
+DELETE http://localhost:3000/api/posts/{postId}  # Replace {postId} with an actual ID
